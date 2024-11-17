@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black">
+
+    <!-- ImageView for splash logo -->
+    <ImageView
+     android:id="@+id/splashImage"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:src="@drawable/ic_launcher"
+    android:layout_centerInParent="true"/>
+
+    <!-- TextView at the bottom -->
+    <TextView
+        android:id="@+id/bottomTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="25dp"
+        android:text="Password Generator"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:fontFamily="@font/bloodstain"/>
+
+    <TextView
+        android:id="@+id/bottomTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="15dp"
+        android:text="Dev ixAAr"
+        android:textColor="@color/white"
+        android:textSize="8sp"
+        android:textStyle="italic" />
+</RelativeLayout>

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "88760877230",
+    "project_id": "password-generator-2c704",
+    "storage_bucket": "password-generator-2c704.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:88760877230:android:219726e0f33346b6bf6d3f",
+        "android_client_info": {
+          "package_name": "com.dev.passwordgenerator"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAIiCo1H1FxUPx7Taclcvnp64R4VvC3SWc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

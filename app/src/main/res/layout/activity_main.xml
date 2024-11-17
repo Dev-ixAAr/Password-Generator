@@ -1,0 +1,116 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#121212">
+
+    <!-- Title Text -->
+    <TextView
+        android:id="@+id/titleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Password Generator"
+        android:layout_centerHorizontal="true"
+        android:textSize="30sp"
+        android:fontFamily="@font/bloodstain"
+        android:textColor="#ffffff"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"/>
+
+    <!-- Password Length Input -->
+    <EditText
+        android:id="@+id/lengthInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Password Length"
+        android:inputType="number"
+        android:backgroundTint="#ffffff"
+        android:textColor="#ffffff"
+        android:layout_below="@id/titleTextView"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Checkboxes for options -->
+    <CheckBox
+        android:id="@+id/includeUppercase"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Include Uppercase"
+        android:textColor="#ffffff"
+        android:layout_below="@id/lengthInput"/>
+
+    <CheckBox
+        android:id="@+id/includeNumbers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Include Numbers"
+        android:textColor="#ffffff"
+        android:layout_below="@id/includeUppercase"/>
+
+    <CheckBox
+        android:id="@+id/includeSpecial"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Include Special Characters"
+        android:textColor="#ffffff"
+        android:layout_below="@id/includeNumbers"/>
+
+    <!-- Generate Password Button -->
+    <Button
+        android:id="@+id/generateButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Generate Password"
+        android:backgroundTint="#1db954"
+        android:textColor="#ffffff"
+        android:layout_below="@id/includeSpecial"
+        android:layout_marginTop="16dp"/>
+
+    <!-- Password Strength Indicator -->
+    <TextView
+        android:id="@+id/passwordStrength"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Strength: "
+        android:textSize="16sp"
+        android:textColor="#ffffff"
+        android:layout_below="@id/generateButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"/>
+
+    <!-- Password Output Display -->
+    <TextView
+        android:id="@+id/passwordOutput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Your password will appear here"
+        android:textColor="#ffffff"
+        android:padding="16dp"
+        android:layout_below="@id/passwordStrength"
+        android:layout_marginTop="16dp"
+        android:background="#333333"
+        android:gravity="center"/>
+
+    <!-- Copy to Clipboard Button -->
+    <Button
+        android:id="@+id/copyButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Copy to Clipboard"
+        android:backgroundTint="#1db954"
+        android:textColor="#ffffff"
+        android:layout_below="@id/passwordOutput"
+        android:layout_marginTop="16dp"/>
+
+    <!-- About Button at the Bottom Center -->
+    <Button
+        android:id="@+id/aboutButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="About"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="#1db954"
+        android:textColor="#ffffff"/>
+</RelativeLayout>

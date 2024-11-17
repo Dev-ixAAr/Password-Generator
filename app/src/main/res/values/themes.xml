@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Theme.PasswordGenerator" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+    <item name="colorPrimary">#1db954</item>
+    <item name="colorPrimaryVariant">#1a1a1a</item>
+    <item name="colorOnPrimary">#ffffff</item>
+    <item name="android:windowBackground">#121212</item>
+
+    <!-- Customize the ActionBar Title Font -->
+    <item name="actionBarTheme">@style/CustomActionBar</item>
+</style>
+
+    <!-- Define the custom action bar style -->
+    <style name="CustomActionBar">
+        <item name="android:fontFamily">@font/bloodstain</item>
+        <item name="android:textColor">#ffffff</item>
+    </style>
+
+    <!-- Splash Screen Theme -->
+    <style name="Theme.Splash" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowBackground">@color/black</item>
+    </style>
+
+</resources>
