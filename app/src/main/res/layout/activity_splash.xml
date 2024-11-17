@@ -26,7 +26,7 @@
         android:fontFamily="@font/bloodstain"/>
 
     <TextView
-        android:id="@+id/bottomTextView"
+        android:id="@+id/bottomTextView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
